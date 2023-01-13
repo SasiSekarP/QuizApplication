@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+
+    <!-- style sheet link -->
+    <link rel="stylesheet" href="./style.css">
+    
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./icons8-checklist-48.png" type="image/x-icon">
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <form class="container" id="formControle">
+
+        <h1>Physics Quiz</h1>
+        <div class="ulDiv">
+            <div class="liContainer"><i class="fa-sharp fa-solid fa-pencil"></i><li> There are 10 questions</li></div>
+
+            <div class="liContainer"><i class="fa-sharp fa-solid fa-pencil"></i><li>4 marks will be provided for Each correct answer</li></div>
+
+            <div class="liContainer"><i class="fa-sharp fa-solid fa-pencil"></i><li>1 mark will be deduce for each wrong answer</li></div>
+
+            <div class="liContainer"><i class="fa-sharp fa-solid fa-pencil"></i><li>No mark will be deduce for Unanswered Question</li></div>
+        </div>
+
+        <div class="questions" id="questions">
+        </div>
+
+        <div class="buttonContainer" id="buttonContainer">
+
+            <button class="btn" id="submitAns" class="submitAns btn" type="submit">Submit Test</button>
+
+        </div>
+
+    </form>
+    <div class="markContainer" id="markContainer">
+
+        <h2>Result</h2>
+        <div class="AnsCount">
+            <div>No of Correct Answers</div>
+            <span id="NoOfCorrectQn">0</span>
+        </div>
+
+        <div class="AnsCount">
+            <div>No of Wrong Answers</div>
+            <span id="NoOfWrongQn">0</span>
+        </div>
+
+        <div class="AnsCount">
+            <div>No of Unanswered Question</div>
+            <span id="NoOfUnAnswerQn">0</span>
+        </div>
+
+        <div class="AnsCount">
+            <div>Total Mark</div>
+            <span id="TotalMark">0</span>
+        </div>
+
+        <button onclick="preview()">Preview</button>
+        
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
