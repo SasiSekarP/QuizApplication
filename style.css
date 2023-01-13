@@ -106,3 +106,44 @@ p{
 .optionContainer{
     margin-top: 1rem;
 }
+
+.btn{
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    border: solid 1px goldenrod;
+}
+
+.btn:hover{
+    position: relative;
+    top: 1px;
+    box-shadow: black 5px 5px 15px;
+    background-color: rgb(97, 97, 247);
+}
+
+@media screen and (min-width: 450px) {
+    .qncontainer{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 790px) {
+    .container{
+        width: 100%;
+    }
+
+    .quetionContainer{
+        width: 1000px;
+    }
+
+    .AnsCount{
+        width: 500px;
+        margin: 2rem 2rem 0px;
+        font-size: 20px;
+    }
+
+    .preview{
+        margin: 2rem;
+        width: 5rem;
+    }
+}
