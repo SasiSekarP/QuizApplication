@@ -121,6 +121,17 @@ p{
     background-color: rgb(97, 97, 247);
 }
 
+.btnContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.preview{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 @media screen and (min-width: 450px) {
     .qncontainer{
         width: 100%;
